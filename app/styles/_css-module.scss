@@ -2,6 +2,16 @@
 	margin-bottom: 6em;
 	&> h2 {
 		font-family: monospace;
-		background-color: #ccc;
+		background-color: $gray-lighter;
 	}
+}
+
+.sample-image {
+	zoom: .5;
+	display: block;
+	border: 1px solid $gray-lighter;
+}
+
+&> *:last-child {
+	border: 1px solid $gray-lighter;
 }
