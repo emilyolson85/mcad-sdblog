@@ -1,0 +1,24 @@
+.utility-nav {
+	list-style-type: none;
+	li{
+		display: inline-block;
+		margin: 1em;
+	}
+	a {
+		
+		display: inline-block;
+		color: $black;
+		text-decoration: none;
+		opacity: 0.4;
+	}
+	.request, .link {
+		padding-left: 1em;
+		width: 100px;
+		border-left: 1px solid #ccc;
+	}
+	.brochure{
+		margin-left: 0;
+		padding-left: 0;
+		
+	}
+}
