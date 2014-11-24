@@ -6,10 +6,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+		<link rel="stylesheet" href="bower_components/imagefill/css/main.css">
+		<link rel="stylesheet" href="bower_components/imagefill/css/grid.css">
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -73,14 +75,33 @@
 		<div class="css-module">	
 			<h2>.article-block</h2>
 			<img class="sample-image" src="images/modules/article-block.png" alt="Utility Links">
-			
-			<article class="article-block">
+		
+			<div class="container">
+			<article class="article-block category-blue block-small">
+				<p class="post-date">Feb 20, 2014</p>
 				<p class="category">Biomimicry</p>
-				<p class="date">Feb 20, 2014</p>
-				<h2 class="topic"><a href="#">Design Rules for Sustainability</a></h2>
+				<h1>Design Rules for Sustainability</h1>
 				<a href="#"><img src="images/4designrules.jpg" alt="Design Rules for Sustainability"></a>
 			</article>
+			<article class="article-block category-yellow block-medium">
+				<p class="post-date">Feb 20, 2014</p>
+				<p class="category">Biomimicry</p>
+				<h1>Design Rules for Sustainability</h1>
+				<a href="#"><img src="images/4designrules.jpg" alt="Design Rules for Sustainability"></a>
 			</article>
+			<article class="article-block category-green block-large">
+				<p class="post-date">Feb 20, 2014</p>
+				<p class="category">Biomimicry</p>
+				<h1>Design Rules for Sustainability</h1>
+				<a href="#"><img src="images/4designrules.jpg" alt="Design Rules for Sustainability"></a>
+			</article>
+			<article class="article-block category-red block-medium">
+				<p class="post-date">Feb 20, 2014</p>
+				<p class="category">Biomimicry</p>
+				<h1>Design Rules for Sustainability</h1>
+				<a href="#"><img src="images/4designrules.jpg" alt="Design Rules for Sustainability"></a>
+			</article>
+			</div>	
 		</div>
 		
 		
@@ -89,14 +110,13 @@
 			<h2>.social-media</h2>
 			<img class="sample-image" src="images/modules/social-media.png" alt="Utility Links">
 			
-			<nav class="social-media">
-				<ul>
-					<li>facebook</li>
-					<li>twitter</li>
-					<li>pinterest</li>
-					<li>linked-in</li>
+				<ul class="social-media">
+					<li><a href="#"><i class="fa fa-facebook"></i><span class="visuallyhidden">facebook</span></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i><span class="visuallyhidden">twitter</span></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i><span class="visuallyhidden">pinterest</span></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i><span class="visuallyhidden">linked-in</span></a></li>
 				</ul>
-			</nav>
+		
 		</div>	
 			
 			
@@ -104,9 +124,17 @@
 		<div class="css-module">
 			<h2>.page-footer</h2>
 			<img class="sample-image" src="images/modules/page-footer.png" alt="Utility Links">
-			<footer class="page-footer">
-				<h4>Minneapolis College of Art and Design &copy; 2014</h4>
-			</footer>
+		
+		<footer class="page-footer">
+				<p>Minneapolis College of Art and Design &copy; 2014</p>
+				
+			<ul class="social-media">
+				<li><a href="#"><i class="fa fa-facebook"></i><span class="visuallyhidden">facebook</span></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i><span class="visuallyhidden">twitter</span></a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i><span class="visuallyhidden">pinterest</span></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i><span class="visuallyhidden">linked-in</span></a></li>
+			</ul>
+		</footer>
 		</div>
 		
 			
@@ -121,9 +149,16 @@
         </script>
 
         <!-- build:js scripts/vendor.js -->
+
         <!-- bower:js -->
+
         <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+        <script src="bower_components/eventie/eventie.js"></script>
+        <script src="bower_components/imagesloaded/imagesloaded.js"></script>
         <!-- endbower -->
+		
+        <script src="bower_components/imagefill/js/jquery-imagefill.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
